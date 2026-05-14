@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civil Engineering Career Opportunities</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">🏗️ CivilCareers</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#jobs">Opportunities</a></li>
+            <li><a href="#career-path">Career Path</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Build Your Future in Civil Engineering</h1>
+            <p>Discover top career opportunities across structural, geotechnical, transportation, environmental, and construction management sectors.</p>
+            <a href="#jobs" class="btn-primary">Explore Opportunities</a>
+        </div>
+    </section>
+
+    <!-- Search & Filter Section -->
+    <section id="jobs" class="filters-section">
+        <div class="container">
+            <h2>Find Your Dream Job</h2>
+            <div class="filters">
+                <input type="text" id="searchInput" placeholder="Search by title, skill, or keyword...">
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="Structural">Structural Engineering</option>
+                    <option value="Geotechnical">Geotechnical Engineering</option>
+                    <option value="Transportation">Transportation Engineering</option>
+                    <option value="Environmental">Environmental Engineering</option>
+                    <option value="Water Resources">Water Resources</option>
+                    <option value="Construction">Construction Management</option>
+                </select>
+                <select id="levelFilter">
+                    <option value="all">All Levels</option>
+                    <option value="Entry">Entry Level</option>
+                    <option value="Mid">Mid Level</option>
+                    <option value="Senior">Senior Level</option>
+                </select>
+                <select id="locationFilter">
+                    <option value="all">All Locations</option>
+                    <option value="Remote">Remote</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Chennai">Chennai</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Listings Section -->
+    <section class="jobs-section">
+        <div class="container">
+            <div id="jobsGrid" class="jobs-grid"></div>
+            <p id="noResults" class="no-results hidden">No jobs found matching your criteria.</p>
+        </div>
+    </section>
+
+    <!-- Career Path Section -->
+    <section id="career-path" class="career-path-section">
+        <div class="container">
+            <h2>Civil Engineering Career Roadmap</h2>
+            <div class="roadmap">
+                <div class="roadmap-step">
+                    <div class="step-icon">🎓</div>
+                    <h3>Entry-Level Engineer</h3>
+                    <p>0-3 Years | Assist in design, site inspections, and drafting.</p>
+                </div>
+                <div class="roadmap-arrow">→</div>
+                <div class="roadmap-step">
+                    <div class="step-icon">📐</div>
+                    <h3>Project Engineer</h3>
+                    <p>3-7 Years | Manage small projects, coordinate with teams.</p>
+                </div>
+                <div class="roadmap-arrow">→</div>
+                <div class="roadmap-step">
+                    <div class="step-icon">🏗️</div>
+                    <h3>Senior Engineer</h3>
+                    <p>7-12 Years | Lead design teams, complex problem solving.</p>
+                </div>
+                <div class="roadmap-arrow">→</div>
+                <div class="roadmap-step">
+                    <div class="step-icon">⭐</div>
+                    <h3>Project Manager / Director</h3>
+                    <p>12+ Years | Oversee multiple projects, strategic decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Certifications Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Essential Skills & Certifications</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>💻 Software Skills</h3>
+                    <ul>
+                        <li>AutoCAD</li>
+                        <li>STAAD.Pro</li>
+                        <li>Revit (BIM)</li>
+                        <li>ETABS / SAP2000</li>
+                        <li>MS Project / Primavera</li>
+                        <li>ArcGIS</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>📜 Key Certifications</h3>
+                    <ul>
+                        <li>Professional Engineer (PE) License</li>
+                        <li>LEED Accredited Professional</li>
+                        <li>PMP (Project Management)</li>
+                        <li>OSHA Safety Certification</li>
+                        <li>Autodesk Certified Professional</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>🧠 Core Competencies</h3>
+                    <ul>
+                        <li>Structural Analysis & Design</li>
+                        <li>Site Planning & Development</li>
+                        <li>Project Cost Estimation</li>
+                        <li>Quality Control & Assurance</li>
+                        <li>Regulatory Compliance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Newsletter Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to get the latest civil engineering job openings delivered to your inbox.</p>
+            <form id="newsletterForm" class="newsletter-form">
+                <input type="email" id="emailInput" placeholder="Enter your email address" required>
+                <button type="submit" class="btn-primary">Subscribe</button>
+            </form>
+            <p id="subscribeMsg" class="subscribe-msg hidden">Thank you for subscribing!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 CivilCareers. Built for aspiring civil engineers.</p>
+        </div>
+    </footer>
+
+    <!-- Job Detail Modal -->
+    <div id="jobModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalCompany" class="modal-company"></p>
+            <div id="modalBody"></div>
+            <button class="btn-primary apply-btn">Apply Now</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
